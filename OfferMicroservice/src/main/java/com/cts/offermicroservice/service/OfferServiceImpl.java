@@ -13,8 +13,8 @@ import org.springframework.stereotype.Service;
 
 import com.cts.offermicroservice.client.AuthClient;
 import com.cts.offermicroservice.client.PointClient;
-import com.cts.offermicroservice.exception.CategoryNotFoundException;
-import com.cts.offermicroservice.exception.InvalidUserException;
+import com.cts.offermicroservice.service.exception.CategoryNotFoundException;
+import com.cts.offermicroservice.service.exception.InvalidUserException;
 import com.cts.offermicroservice.model.AuthResponse;
 import com.cts.offermicroservice.model.Offer;
 import com.cts.offermicroservice.model.OfferCategory;

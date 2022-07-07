@@ -22,15 +22,13 @@ import org.springframework.test.context.ContextConfiguration;
 import com.cts.offermicroservice.OfferMicroserviceApplication;
 import com.cts.offermicroservice.client.AuthClient;
 import com.cts.offermicroservice.client.PointClient;
-import com.cts.offermicroservice.exception.CategoryNotFoundException;
-import com.cts.offermicroservice.exception.InvalidUserException;
+import com.cts.offermicroservice.service.exception.CategoryNotFoundException;
+import com.cts.offermicroservice.service.exception.InvalidUserException;
 import com.cts.offermicroservice.model.AuthResponse;
 import com.cts.offermicroservice.model.Offer;
 import com.cts.offermicroservice.model.OfferCategory;
 import com.cts.offermicroservice.repository.OfferCategoryRepository;
 import com.cts.offermicroservice.repository.OfferRepository;
-
-import com.cts.offermicroservice.service.OfferServiceImpl;
 
 @SpringBootTest
 @ContextConfiguration(classes=OfferMicroserviceApplication.class)

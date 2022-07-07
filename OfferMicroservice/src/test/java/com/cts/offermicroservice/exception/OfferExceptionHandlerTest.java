@@ -7,11 +7,10 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.converter.HttpMessageNotReadableException;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 
-import com.cts.offermicroservice.exception.InvalidUserException;
-import com.cts.offermicroservice.exception.CategoryNotFoundException;
-import com.cts.offermicroservice.exception.OfferExceptionHandler;
+import com.cts.offermicroservice.service.exception.InvalidUserException;
+import com.cts.offermicroservice.service.exception.CategoryNotFoundException;
+import com.cts.offermicroservice.service.exception.OfferExceptionHandler;
 
 import feign.FeignException;
 
