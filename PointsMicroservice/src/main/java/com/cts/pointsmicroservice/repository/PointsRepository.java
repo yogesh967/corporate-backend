@@ -9,7 +9,7 @@ import com.cts.pointsmicroservice.model.Points;
 @Repository
 public interface PointsRepository extends JpaRepository<Points, Integer> {
 
-	@Query(value = "from Points p where p.offerId=?2 and p.empId=?1")
+	@Query(value = "from Points p where p.offerId=?1 and p.empId=?1")
 	public Points getPoint(int empId, int offerId);
 
 	@Query(value = "select sum(p.points) from Points p where p.empId=?1")
